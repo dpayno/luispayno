@@ -1,0 +1,137 @@
+BODY
+{
+    FONT-FAMILY: verdana,geneva,arial,helvetica,sans-serif;
+    FONT-SIZE: 10pt
+}
+P
+{
+    FONT-FAMILY: verdana,geneva,arial,helvetica,sans-serif;
+    FONT-SIZE: 10pt
+}
+UL
+{
+    FONT-FAMILY: verdana,geneva,arial,helvetica,sans-serif;
+    FONT-SIZE: 10pt
+}
+LI
+{
+    FONT-FAMILY: verdana,geneva,arial,helvetica,sans-serif;
+    FONT-SIZE: 10pt
+}
+FORM
+{
+    FONT-FAMILY: verdana,geneva,arial,helvetica,sans-serif;
+    FONT-SIZE: 8pt
+}
+INPUT
+{
+    FONT-FAMILY: verdana,geneva,arial,helvetica,sans-serif;
+    FONT-SIZE: 8pt
+}
+A
+{
+    TEXT-DECORATION: none
+}
+A:link
+{
+    COLOR: #ff6317
+}
+A:visited
+{
+    COLOR: #a00000
+}
+A:active
+{
+    COLOR: #808080
+}
+A:hover
+{
+    COLOR: #ff0000
+}
+TABLE
+{
+    FONT-FAMILY: verdana,geneva,arial,helvetica,sans-serif;
+    FONT-SIZE: 8pt
+}
+TR
+{
+    FONT-FAMILY: verdana,geneva,arial,helvetica,sans-serif;
+    FONT-SIZE: 8pt
+}
+TD
+{
+    FONT-FAMILY: verdana,geneva,arial,helvetica,sans-serif;
+    FONT-SIZE: 8pt
+}
+.Message
+{
+
+    COLOR: #000000;
+    FONT-FAMILY: verdana, geneva, arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+
+}
+TD.MessageName
+{
+}
+.Name
+{
+    COLOR: maroon;
+    FONT-FAMILY: verdana, geneva, arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+
+}
+.LoggedIn
+{
+    COLOR: #c0c0c0;
+    FONT-FAMILY: verdana, geneva, arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt
+}
+.LoggedOut
+{
+    COLOR: #c0c0c0;
+    FONT-FAMILY: verdana, geneva, arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt
+}
+.Error
+{
+    COLOR: #ff0000;
+    FONT-FAMILY: verdana, geneva, arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt
+}
+.Info
+{
+    COLOR: green;
+    FONT-FAMILY: verdana, geneva, arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bold
+}
+HTML
+{
+    FONT-FAMILY: verdana, helvetica, sans-serif
+}
+INPUT.editField
+{
+    BACKGROUND-COLOR: #f6f6f6;
+    BORDER-BOTTOM-COLOR: #f3f3f3;
+    BORDER-LEFT-COLOR: #f3f3f3;
+    BORDER-RIGHT-COLOR: #f3f3f3;
+    BORDER-TOP-COLOR: #f3f3f3;
+    COLOR: #000000;
+    FONT-SIZE: 8pt
+}
+.infoHeader
+{
+    COLOR: #000000;
+    FONT-FAMILY: verdana, geneva, arial, helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    FONT-WEIGHT: bold
+}
+.infoText
+{
+    FONT-SIZE: 8pt
+}
+.Cinfo
+{
+    FONT-SIZE: 8pt
+}

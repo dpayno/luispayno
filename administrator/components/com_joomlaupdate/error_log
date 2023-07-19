@@ -1,0 +1,2 @@
+[15-Aug-2022 14:59:42 America/Chicago] PHP Warning:  "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in /home2/isishost/public_html/luispayno/administrator/components/com_joomlaupdate/restore.php on line 1426
+[15-Aug-2022 16:49:04 America/Chicago] PHP Warning:  "continue" targeting switch is equivalent to "break". Did you mean to use "continue 2"? in /home2/isishost/public_html/luispayno/administrator/components/com_joomlaupdate/restore.php on line 1426

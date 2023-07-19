@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+    <name>RS Cool Mp3 Player</name>
+    <author>RS Web Solutions</author>
+    <creationDate>March 2012</creationDate>
+    <copyright>Copyright (c) 2010-2015 RS Web Solutions - Development Team</copyright>
+    <license>This extension is released under the GNU/GPL License</license>
+    <authorUrl>http://www.rswebsols.com</authorUrl>
+	<authorEmail>support@rswebsols.com</authorEmail>
+    <version>1.2</version>
+    <description>RS Cool Mp3 Player is a flash based minimalistic Mp3 player with a twist, perfect for your website. It supports the basic functions of an mp3 player- play, pause, draggable volume bar, sound visualizer. It includes a special sound visualizer that changes when you drag the volume bar.</description>
+    <files>
+        <filename module="mod_rscoolmp3player">mod_rscoolmp3player.php</filename>
+        <filename>mod_rscoolmp3player.xml</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+		<filename>js/swfobject.js</filename>
+		<filename>js/index.html</filename>
+		<filename>swf/expressInstall.swf</filename>
+		<filename>swf/preview.swf</filename>
+		<filename>swf/index.html</filename>
+		<filename>xml/index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+				<field type="spacer" name="spacer_bas1" class="text" label="&lt;b&gt;&lt;a target='_blank' href='http://www.rswebsols.com/doc/rscoolmp3player-support'&gt;Read Documentation/Configuration Steps&lt;/a&gt;&lt;/b&gt;"/>
+				<field type="spacer" name="spacer_bas2" class="text" hr="true"/>
+				<field name="rsws_module_width" type="text" default="290" label="Module Width" description="Please specify the module width in pixel. (default value: 290)" />
+				<field name="rsws_module_margin" type="text" default="10" label="Margin between Player" description="If you are listing more than 1 songs, then please specify the gap between 2 songs. (default value: 10)" />
+            </fieldset>
+			<fieldset name="mp3_player" label="MP3 Player Configuration">
+				<field name="rsws_width" type="text" default="281" label="Player Width" description="Please specify the Width of a single mp3 player button. (default value: 281)" />
+				<field name="rsws_height" type="text" default="78" label="Player Height" description="Please specify the Height of a single mp3 player button. (default value: 78)" />
+				<field name="rsws_backgroundColor" type="text" default="ffffff" label="Background Color" description="Color of the background in hex-code, do not add # (default value: ffffff)" />
+				<field name="rsws_autoplay" type="list" default="2" label="Autoplay" description="Start playing the song automatically when loaded. This setting will only work if there is only one mp3 song to play (default value: NO)">
+					<option value="1">YES</option>
+					<option value="2">NO</option>
+				</field>
+				<field name="rsws_margin" type="text" default="5" label="Margin" description="Margin in pixel. (default value: 5)" />
+				<field name="rsws_strokeColor" type="text" default="90C84B" label="Stroke Color" description="Stroke Color in hex-code, do not add # (default value: 90C84B)" />
+				<field name="rsws_fillColor" type="text" default="414042" label="Fill Color" description="Fill Color in hex-code, do not add # (default value: 414042)" />
+			</fieldset>
+			<fieldset name="play_pause_button" label="Play-Pause Button Configuration">
+				<field name="rsws_backColor" type="text" default="FFFFFF" label="Button Back Color" description="Back Color of Play-Pause Button in hex-code, do not add # (default value: FFFFFF)" />
+				<field name="rsws_backOverColor" type="text" default="DEECBD" label="Button Back Over Color" description="Back Over Color of Play-Pause Button in hex-code, do not add # (default value: DEECBD)" />
+				<field name="rsws_signStrokeColor" type="text" default="4B4B4B" label="Button Sign Stroke Color" description="Sign Stroke Color of Play-Pause Button in hex-code, do not add # (default value: 4B4B4B)" />
+				<field name="rsws_signFillColor" type="text" default="83B04D" label="Button Sign Fill Color" description="Sign Fill Color of Play-Pause Button in hex-code, do not add # (default value: 83B04D)" />
+			</fieldset>
+			<fieldset name="volume_control" label="Volume Control Configuration">
+				<field name="rsws_initLevel" type="text" default="50" label="Initial Volume Level" description="Initial Volume Level. Any value from 0 to 100. Enter 0 to mute, 100 to maximum volume. (default value: 50)" />
+				<field name="rsws_backStrokeColor" type="text" default="4B4B4B" label="Back Stroke Color" description="Back Stroke Color of volume control in hex-code, do not add # (default value: 4B4B4B)" />
+				<field name="rsws_backFillColor" type="text" default="83B04D" label="Back Fill Color" description="Back Fill Color of volume control in hex-code, do not add # (default value: 83B04D)" />
+				<field name="rsws_signColor" type="text" default="E7E8E9" label="Sign Color" description="Sign Color of volume control in hex-code, do not add # (default value: E7E8E9)" />
+				<field name="rsws_signOverColor" type="text" default="4B4B4B" label="Sign Over Color" description="Sign Over Color of volume control in hex-code, do not add # (default value: 4B4B4B)" />
+				<field name="rsws_percentTextColor" type="text" default="E7E8E9" label="Percent Text Color" description="Color of percentage text of the volume control in hex-code, do not add # (default value: E7E8E9)" />
+				<field name="rsws_percentTextmarginX" type="text" default="5" label="Percent Horizontal Margin" description="Horizontal margin of percentage text of the volume control in pixel. (default value: 5)" />
+				<field name="rsws_percentTextpositionY" type="text" default="top" label="Percent Vertical Position" description="Vertical position of percentage text of the volume control, it can be 'top', 'bottom', 'center' or a number (default value: top)" />
+			</fieldset>
+			<fieldset name="visualizer" label="Visualizer Configuration">
+				<field name="rsws_visualizerbackColor" type="text" default="4B4B4B" label="Back Color" description="Back Color of visualizer in hex-code, do not add # (default value: 4B4B4B)" />
+				<field name="rsws_visualizerwavesColor" type="text" default="FFFFFF" label="Wave Color" description="Wave Color of visualizer in hex-code, do not add # (default value: FFFFFF)" />
+			</fieldset>
+			<fieldset name="song_text" label="Song Text Configuration">
+				<field name="rsws_artistColor" type="text" default="E7E8E9" label="Artist Color" description="Color of the artist text in hex-code, do not add # (default value: E7E8E9)" />
+				<field name="rsws_artistFontSize" type="text" default="14" label="Artist Font Size" description="Font Size of the artist text in pixel (default value: 14)" />
+				<field name="rsws_songColor" type="text" default="E7E8E9" label="Song Color" description="Color of the song text in hex-code, do not add # (default value: E7E8E9)" />
+				<field name="rsws_songFontSize" type="text" default="12" label="Song Font Size" description="Font Size of the song text in pixel (default value: 12)" />
+			</fieldset>
+			<fieldset name="mp3_songs" label="MP3 Songs Configuration">
+				<field name="rsws_artistName" type="textarea" default="{Artist A}, {Artist B}" label="Name of Artist(s)&lt;br /&gt;&lt;br /&gt;Example:&lt;br /&gt;{Artist A}, {Artist B}" description="Specify the name of artists within {}, seperated by comma. (Example: {Artist A}, {Artist B})" rows="8" cols="40" />
+				<field name="rsws_songName" type="textarea" default="{Song A}, {Song B}" label="Name of MP3 Song(s)&lt;br /&gt;&lt;br /&gt;Example:&lt;br /&gt;{Song A}, {Song B}" description="Specify the name of mp3 songs within {}, seperated by comma. (Example: {Song A}, {Song B})" rows="8" cols="40" />
+				<field name="rsws_songURL" type="textarea" default="{http://www.yoursite.com/mp3/song1.mp3}, {http://www.yoursite.com/mp3/song2.mp3}" label="Location/URL of Song(s)&lt;br /&gt;&lt;br /&gt;Example:&lt;br /&gt;{URL_1}, {URL_2}" description="Specify the name of songs within {}, seperated by comma. (Example: {http://www.song.com/mp3/song1.mp3}, {http://www.song.com/mp3/song2.mp3})" rows="8" cols="40" />
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field type="spacer" name="spacer_adv1" class="text" hr="true"/>
+				<field type="spacer" name="spacer_adv2" class="text" label="&lt;span style='font-weight:normal;'&gt;&lt;b&gt;SWFOBJECT Insertion:&lt;/b&gt;&lt;br /&gt;By default this is 'YES'. That means the module will add the required SWFOBJECT&lt;br /&gt;JavaScript library file. But if you think the SWFOBJECT is already inserted in your website&lt;br /&gt;(by your template or by any other component/module/plugin) then you can set it to 'NO' so&lt;br /&gt;it will prevent the double insertion of the same file.&lt;/span&gt;" />
+				<field name="rsws_insertSWFOBJECT" type="list" default="local" label="Insert SWFOBJECT File" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field type="spacer" name="spacer_adv3" class="text" hr="true"/>				
+				<field type="spacer" class="text" label="&lt;span style='font-weight:normal;'&gt;&lt;b&gt;TROUBLESHOOTING:&lt;/b&gt;&lt;br /&gt;If this module works properly in your website, then this troubleshooting steps are totally not&lt;br /&gt;necessary for you. But if you notice some issue like 'Visualizer Wave is not showing properly'&lt;br /&gt;or similar, then choose 'Use Exact URL' to 'YES' and set the exact website URL below.&lt;/span&gt;" />
+				<field name="rsws_use_exact_url" type="list" default="2" label="Use Exact URL" description="Set to 'YES' to use the 'Exact URL', otherwise set to 'NO'. (Default: 'NO')">
+					<option value="1">JYES</option>
+					<option value="2">JNO</option>
+				</field>
+				<field size="60" name="rsws_exact_url" type="text" default="http://www.yoursite.com/" label="Exact URL" description="The URL of your website, make sure it is properly formatted. (Example: http://www.yoursite.com/)" />
+				<field type="spacer" name="spacer_adv4" class="text" hr="true"/>
+				<field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field name="cachemode" type="hidden" default="static">
+					<option value="static"></option>
+				</field>
+			</fieldset>
+        </fields>
+    </config>
+</extension>

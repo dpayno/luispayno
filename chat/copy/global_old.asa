@@ -1,0 +1,17 @@
+<OBJECT	RUNAT=Server
+	SCOPE=Application
+	ID=ASPChat
+	PROGID="Scripting.Dictionary">
+</OBJECT>
+
+<OBJECT	RUNAT=Server
+	SCOPE=Application
+	ID=ASPChatTime
+	PROGID="Scripting.Dictionary">
+</OBJECT>
+
+<SCRIPT LANGUAGE="VBScript" RUNAT="Server">
+Sub Application_OnStart
+	Application( "SwearWords" ) = Split("PUTA CABRON DESGRACIADO HOSTIA ", " ")
+End Sub
+</SCRIPT>

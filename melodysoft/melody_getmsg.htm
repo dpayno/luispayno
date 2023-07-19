@@ -1,0 +1,159 @@
+<html>
+<head>
+<meta http-equiv="Pragma" content="no-cache">
+<style type="text/css">
+<!--
+A:link			{ text-decoration: none }
+A:visited		{ text-decoration: none }
+A:active		{ text-decoration: none }
+A:hover		{ text-decoration: underline }
+
+.MENSAJES		{ font-family: Verdana, Arial, Helvetica; font-size: 7.5pt }
+-->
+</style>
+	<title>!!--CAMPO:subject--!</title>
+</head>
+
+<body bgcolor=#ffffff text=#000000 link=#002090 vlink=#204090 alink=#204090 topmargin=0 leftmargin=0 marginwidth=0 marginheight=0>
+
+
+
+
+<p align=left>
+
+	<table border=0 width=100% cellspacing=0 cellpadding=7 bgcolor=#306090><tr><td bgcolor=#306090>
+	  <table border=0 width=100% cellspacing=0 cellpadding=0>
+		<tr>
+		   <td valign=middle>
+		   <font face=Verdana size=3 color=#ffffff>&nbsp;<b>!!--CAMPO:nombre--!</b></font>
+		   &nbsp; &nbsp;!!--CMD:GFXEMAIL:email:http://images.melodysoft.com/gb_mail.gif--! !!--CMD:GFXLINK:link:http://images.melodysoft.com/gb_www.gif--!</td><td align=right valign=middle>
+		   <font face="Verdana" size=1 color=#ffffff><img src="http://images.melodysoft.com/gb_time.gif" border=0 alt="Fecha" align=middle>&nbsp;
+		   !!--CAMPO:date--! !!--CAMPO:time--!&nbsp;</font>
+		   </td>
+		</tr>
+	   </table></td></tr>
+		<tr>
+		   <td valign=middle align=center bgcolor=#e2e2e2 BACKGROUND="http://images.melodysoft.com/bg_blue-white.gif">
+		   <font face="Verdana" size=1>
+		   <b>Host:</b> !!--CAMPO:host--! &nbsp;&nbsp;
+		   <b>IP:</b> !!--CAMPO:ip--! &nbsp;&nbsp;
+		   <b>Sistema:</b> !!--CAMPO:SO--!
+		   </font>
+		   </td>
+		</tr>
+	</table>
+	!!--ERROR_AREA--!
+	<br>
+!!--BANNER_AREA--!<br>
+
+	<table align=center border=0 cellspacing=0 cellpadding=6 width=97%><tr><td bgcolor=#306090>
+	<A HREF="!!--CAMPO:URL--!"><IMG SRC="http://images.melodysoft.com/gb_exit_s.gif" align=right alt="Volver al foro" BORDER="0"></A>
+	<A HREF="#Responder"><IMG border=0 alt="Responder" align=right SRC="http://images.melodysoft.com/gb_addmsg_s.gif"></A>
+	<font face="Verdana" size=2 color=#ffffff><b>!!--CAMPO:subject--!&nbsp;&nbsp;</b></font>
+	<a href="!!--CAMPO:DELURL--!"><img src="http://images.melodysoft.com/gb_delmsg.gif" border=0 alt="Admin: Borrar 	mensaje"></a>
+	</td>
+	</tr>
+	<td height="5" background="http://images.melodysoft.com/bg_blue-whitem.gif" align=left bgcolor=#efefef><font face="Verdana" size=1>&nbsp;</font></td>
+
+	<tr><td bgcolor=#efefef>
+	<table border=0>
+		<tr>
+		   <td valign=top width=20><img border=0 src="http://images.melodysoft.com/gb_msg.gif" alt="Mensaje"></td>
+		   <td VALIGN="top"ALIGN="left"><font face="Verdana" size=2>
+		       !!--MSG_AREA--!
+			%!!Imagen_BLOCK:
+
+				<br><br>
+				<font  SIZE="2"><b>Imagen:</b></font>
+				<br>
+				<IMG SRC="!!--CAMPO:Imagen--!">
+				<br>
+				!!--CAMPO:Imagen--!
+
+			!!%
+			</font>
+		   </td>
+		</tr>
+		<TR><TD HEIGHT="5">&nbsp;</TD></TR>
+	</table>
+	</td></tr></table>
+	<br>
+
+
+	<table border=0 width=97% cellspacing=0 cellpadding=6 align=center>
+	<tr><td bgcolor=#306090 align=left><font face="Verdana" size=2 color=#ffffff><b>Respuestas (!!--CAMPO:NUMREPLIES--!)</b></font></td></tr>
+	<TR><td height="5" background="http://images.melodysoft.com/bg_blue-whitem.gif" align=left bgcolor=#efefef><font face="Verdana" size=1>&nbsp;</font></td>
+</TR>
+	<tr><td bgcolor=#efefef align=left><font CLASS="MENSAJES">
+	!!--RSPARBOL_AREA--!<br></font></td></tr></table>
+</p>
+
+<a name="Responder">
+<p align=center>
+	<br>
+
+	<center><table border=0 width=80% cellspacing=0 cellpadding=6><tr><td align=left bgcolor=#306090>
+	<A HREF="!!--CAMPO:URL--!"><IMG SRC="http://images.melodysoft.com/gb_exit_s.gif" align=right 	border=0 alt="Volver"></A>
+	<font face=Verdana size=2 color=#ffffff><b>Responder</b></font>
+	</td></tr>
+<tr>
+
+ 	  <td align=center height=5 background="http://images.melodysoft.com/bg_blue-whitem.gif">&nbsp;
+ 	  </td></tr>
+
+	<tr><td align=center bgcolor=#efefef>
+
+	<form method="post" action="!!--CAMPO:APPURL--!">
+	!!--HIDDENDATA_POSTMSG_AREA--!
+	<center>
+	<table border=0 cellspacing=5>
+		<tr>
+		   <td align=right><font face="Verdana" size=2><b>Nombre</b></font></td>
+		   <td><input type=text name="nombre" size=65 value="!!--CAMPO:mi-nombre--!" maxlength="40"></td>
+		</tr>
+		<tr>
+		   <td align=right><font face="Verdana" size=2><b>E-Mail</b></font></td>
+		   <td><input type=text name="email" size=65 value="!!--CAMPO:mi-email--!"></td>
+		</tr>
+		<tr>
+		   <td align=right><font face="Verdana" size=2><b>Asunto</b></font></td>
+		   <td><input type=text name="subject" size=65 value="!!--CAMPO:re--!" maxlength="250"></td>
+		</tr>
+		<tr>
+		   <td align=right><font face="Verdana" size=2><b>Web</b></font></td>
+		   <td><input type=text name="link" size=65 value="!!--CMD:CAMPOCTRL:link:1:http://--!"></td>
+		</tr>
+		<tr>
+		   <td align=right><font FACE="Verdana" SIZE="2"><b>Enlace a una<br>imagen</b></td>
+		   <td><input type=text name="Imagen" size=65 value="!!--CMD:CAMPOCTRL:Imagen:0:http://--!"> 			</td>
+		</tr>
+
+		<tr>
+		   <td></td>
+		   <td align=left><input type=checkbox !!--CAMPO:mi-bNotificar--!  value=checked name="bNotificar">
+			<font face=Verdana size=1><b>Notificar por e-mail respuestas.
+			</b></font></td>
+		</tr>
+	</table>
+	</center>
+	<br>
+	<font face="Verdana" size=3><b>
+	Mensaje</b></font>
+	<br>
+	<center>
+	<textarea name="mensaje" wrap="virtual" cols=64 rows=12>!!--MSG_TEXT_AREA--!</textarea>
+	<br><br><br>
+	<input type="submit" value=" Responder ">&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="reset" value="      Borrar      ">
+	<br><br>
+	<input type=checkbox !!--CAMPO:mi-showpostedmsg--! value=checked name="showpostedmsg">
+	<font face=Verdana size=1><b>Ver mi mensaje despues de insertarlo.</b></font>
+
+	</center>
+	</form>
+
+	</td></tr></table></center><br>
+</p>
+
+</body>
+</html>

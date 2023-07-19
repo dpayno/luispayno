@@ -1,0 +1,101 @@
+AWAY
+
+Sintaxis: AWAY [mensaje] 
+Uso: El comando AWAY sirve para indicar a los demás usuarios que usted no está en ese momento prestando atención al IRC. Para entrar en este estado debe de especificar un mensaje, para salir del estado de AWAY basta que ejecute el comando sin poner mensaje. 
+Su estado de AWAY aparecerá cuando le hagan un WHOIS.
+
+INVITE
+Sintaxis: INVITE <NICK&GT; >Uso: Dirige una invitación al nick especificado para que entre en el canal que indicamos. Es necesario tener estatus de operador del canal para poder ejecutar este comando. Si el canal se encuentra en modo +i (ver comando /MODE) solo podrán acceder a él usuarios que han sido previamente invitados. 
+
+JOIN
+Sintaxis: JOIN <#canal> [clave] 
+Uso: Nos introduce en el canal especificado, si este está protegido con clave es necesario incluirla en la orden. Si en canal no existe será creado para nosotros y entraremos a él como usuario único. Todo canal que se queda vacío deja de existir como tal hasta que sea de nuevo creado al entrar alguien, no hay que confundir esto con el hecho de que un canal se encuentre registrado en los servicios de la red de IRC, eso no implica que el canal esté siempre ocupado y por tanto exista, sino que tiene una cobertura de servicios de la red cuando está activo y tiene usuarios en su interior. 
+
+KICK
+Sintaxis: <#canal> <nick> [razón]
+Uso: Este comando solo puede ser empleado por aquellos usuarios que tengan estatus de operador del canal. Provoca la inmediata expulsión del nick especificado del canal que se indique, esta expulsión podrá ir acompañada de un mensaje. El comando /KICK no evita la entrada posterior del usuario expulsado, para esto hay en utilizar el "baneo". Vea el modo +b en el comando /MODE, apartado "modos de usuario en un canal". 
+
+LINKS
+Sintaxis: LINKS
+Uso: Nos devuelve una lista de servidores que se encuentran conectados a la red de IRC en la que nos encontramos. 
+
+LIST
+Sintaxis: LIST [ cadena | -MIN num | -MAX num ]
+Uso: Este comando nos proporciona una lista de los canales que existen y se encuentran visibles en el momento en que se solicita, indicándonos el nombre de cada canal, el número de usuarios que hay en su interior, y el Topic o descripción del canal si este ha sido especificado por sus usuarios (ver comando /TOPIC). Sin parámetros proporciona una lista completa, los parámetros permiten hacer búsquedas más selectivas. Leer el punto 2 de este documento para ver una descripción mas detallada del significado de los parámetros opcionales. Muy importante: recuerde que la lista de canales solo representa una situación estática, es decir, referida al momento en que usted la solicitó, eso quiere decir que si entra mas tarde en uno de ellos puede que el número de usuarios de su interior no coincida con el que le apareció en la lista. 
+
+ME
+Sintaxis: ME <texto>
+Uso: Envía un mensaje a la pantalla activa de canal o de privado precediéndolo de su nick como si este formase parte del propio mensaje. 
+
+Por ejemplo, si su nick es "JuanJo" y ejecuta el comando: /me tiene hoy un mal día, el mensaje que se presentará será: * JuanJo tiene hoy un mal día 
+
+MSG
+Sintaxis: MSG <nick | #canal>
+Uso: Este comando nos permite enviar mensajes a un determinado canal o en modo privado a un determinado nick. Es el comando que normalmente su cliente de IRC asume por defecto cuando usted simplemente escribe una frase en una pantalla de canal o de nick sin especificar comando alguno. Si usted envía un mensaje a un canal en el que no está este solo se leerá en dicho canal si este no tiene activado el modo +n (ver comando /MODE). 
+
+MODE
+Sintaxis: MODE [#canal | nick] <+/-modos> [parámetros] 
+Uso: Es un comando potente que da la los operadores de un canal un amplio control sobre los modos de dicho canal y sobre sus usuarios, sean o no también operadores del canal. También sirve para modificar los propios modos de usuario dentro de la sesión de IRC. 
+
+Modos de Usuario en IRC-Hispano:
+i	Activa o desactiva el modo "invisible". Estando como +i su nick no aparecerá cuando otro usuario ejecute el comando WHO o el comando NAMES 	
+s	Activa o desactiva el modo para ver los mensajes que el servidor envía en forma de NOTICE. Puede ser cómodo ponerse en modo +s si no nos interesan estos mensajes que el servidor envía con bastante frecuencia. 	
+w	Activa o desactiva la recepción de mensajes que el servidor envía vía WALLOP, puede decirse que es un tipo de NOTICE global usado en ocasiones por los operadores de la red. 	
+d	Activa o desactiva la recepción de mensajes dichos públicamente en canales. Esto es, si tenemos el modo d activo para nuestro nick, el servidor no nos enviará los mensajes públicos que se digan en un canal. Ideal para bots o para estados de AWAY si no se quiere desaprovechar ancho de banda. Nota: Cuando el modo d está activo, los canales en los que estamos aparecerán precedidos por un guión (-) cuando nos hagan un WHOIS. 	
+
+
+Modos de Canales en IRC-Hispano:
+v	Da o retira el modo de voz a un usuario dentro de un canal (ver modo +m)	
+o	Este modo permite dar o retirar el estatus de operador del canal a nosotros mismos o a otro usuario del canal. 	
+b	Es el modo que establece o retira un baneo a un usuario en un canal. Si este usuario no se encuentra dentro del canal no podrá entrar a este y recibirá el mensaje de que se encuentra baneado, si está dentro no podrá dirigir mensajes al canal salvo que sea operador del mismo. 	
+t	Activa o desactiva la prohibición de que aquellos que no sean operadores puedan modificar el topic del canal	
+n	Activa o desactiva la prohibición de que aquellas personas que no estén en el canal puedan dirigir mensajes a este, vía el comando MSG. 	
+k	Establece una clave para el canal que tendrá que ser introducida en el comando JOIN para poder acceder a este	
+s	Hace el canal secreto (es una especie de modo invisible para canales), no será listado con el comando /LIST ni aparecerá en el /WHOIS de los usuarios que hay en su interior salvo que lo haga otro usuario que también está en el canal. 	
+i	Activa o desactiva la opción de canal solo para invitados (a través del comando INVITE). Las invitaciones al canal solo podrán realizarla los operadores de este. 	
+p	Canal privado, es un modo similar al secreto (modo s). 	
+l	Establece un límite máximo de usuarios dentro del canal. 	
+m	Establece o retira la configuración de canal moderado. Con +m en el canal solo podrán escribir mensajes los operadores y aquellos usuarios que tengan voz (modo +v de usuario en el canal). 	
+
+NAMES
+Sintaxis: NAMES <nick | #canal> 
+
+Uso: Nos proporcionará una lista de los nicks que se encuentran en un determinado canal. Si usted no se encuentra en ese canal los usuarios que están en modo invisible (ver comando MODE) no aparecerán en esa lista siempre que no estemos en otro canal en que ellos están también) 
+
+NICK
+Sintaxis: NICK <nuevo_nick>
+Uso: Le permite especificar y cambiar el nick, apodo o nombre por el que los demás le identificarán en el IRC. Este apodo está limitado a un máximo de 9 caracteres. 
+
+NOTICE
+Sintaxis: NOTICE <nick | #canal>
+Uso: Otra manera de enviar un mensaje a un determinado nick o a todos los que forman parte de un canal. 
+
+PART
+Sintaxis: PART <#canal> 
+
+Uso: Nos hace salir inmediatamente del canal indicado. 
+
+QUIT
+Sintaxis: QUIT <mensaje>
+Uso: Envía al servidor de IRC una orden que produce nuestra desconexión inmediata del IRC. Es la forma habitual de cerrar la sesión. Adicionalmente usted puede añadir un mensaje que será visto por los demás usuarios junto a la notificación de su salida. 
+
+SERVER
+Sintaxis: SERVER nombre:puerto:contraseña
+Uso: Conecta al servidor especificado.
+
+
+TOPIC
+Sintaxis: TOPIC <#canal> <texto>
+Uso: Sirve para especificar o modificar el Tópico o descripción que acompaña al nombre del canal. El texto del topic será enviado a todos los usuarios que entren en el canal y acompañará al nombre de este el la lista que se obtiene con el comando /LIST. Si el canal se encuentra en modo +t (ver comando /MODE) el Topic solo podrá ser modificado por los usuarios que tengan estatus de operador del canal. 
+
+WHO
+Sintaxis: WHO [nombre] [o] 
+Uso: El comando WHO lo emplea un cliente para generar una consulta que devuelve todos los usuarios visibles del IRC o una lista de información que coincida con la máscara o nombre completo del parámetro [nombre]. El comando devuelve el servidor principal, el servidor de IRC, el nombre real, el nick, y los canales en los que se encuentra el usuario. El parámetro "o" se indica para conocer los operadores activos del servidor o mascara de la red. Es decir, cuando se emplea dicho parámetro, únicamente se devuelve información de los operadores de la red de IRC, no de todos los usuarios en general. 
+
+WHOIS
+Sintaxis: WHOIS <nick>
+Uso: Este comando le proporcionará información acerca de un determinado nick pudiendo ver si se encuentra en ese momento en el IRC. Si el usuario al que hacemos el WHOIS se encuentra conectado al IRC obtendremos una información que dependerá del cliente de IRC que estamos usando y de la versión del servidor al que estemos conectados. Normalmente usted podrá ver los datos referidos a la conexión de ese nick: la dirección de dicha conexión, su identificador de usuario (identd), si se encuentra o no away (ver comando /AWAY), el tiempo IDLE (el tiempo que lleva inactivo), si tiene o no estatus especial en el IRC,... etc. 
+
+WHOWAS
+Sintaxis: WHOWAS <nick>
+Uso: Es útil para pedir información sobre un usuario que ya no se encuentra en el IRC. Si este está aun en el historial de nicks del servidor nos proporcionará una información similar a la de /WHOIS. 

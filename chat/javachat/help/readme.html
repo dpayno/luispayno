@@ -1,0 +1,291 @@
+<HTML>
+	<HEAD>
+		<title>Frequently asked questions about Bocazas 1.1</title>
+	</HEAD>
+	<BODY text="#000000" vLink="#003399" aLink="#003399" link="#003399" bgColor="#ffffff" leftMargin="0" topMargin="0">
+		<TABLE id="Table4" width="100%" align="center" border="0">
+			<TBODY>
+				<TR>
+					<TD vAlign="top" width="162" rowSpan="2">
+						<P>&nbsp;</P>
+						<P><BR>
+							&nbsp;&nbsp;<IMG src="logo.jpg"></P>
+					</TD>
+					<TD vAlign="top" width="10" rowSpan="2">&nbsp;
+					</TD>
+					<TD width="600">
+						<H3>Frequently Asked Questions about Bocazas 1.1</H3>
+					</TD>
+				</TR>
+				<TR>
+					<TD vAlign="top" width="600">
+						<P><STRONG>License</STRONG></P>
+<p>You can freely distribute and use this program meanwhile you provide
+it complete, without modification and free of charge.</p>
+
+<p>You can´t charge any amount for the use of this program or the services
+provided by it without Bocazas S.L. consent.</p>
+
+<p>Bocazas S.L. cannot be held responsible for the content of the site
+where is installed, neither for any damage that may occur as
+a result of using the program.</p>
+<p></p>
+						<OL>
+							<LI>
+								<A href="#1"><STRONG><STRONG>Which are the general characteristics and what versions are 
+											available?</STRONG></STRONG></A>
+							<LI>
+								<A href="#2"><STRONG><STRONG>Where do I upload the content of the compressed file?</STRONG></STRONG></A>
+							<LI>
+								<A href="#3"><STRONG><STRONG>Which is the simplest way to setup the program?</STRONG></STRONG></A>
+							<LI>
+								<A href="#4"><STRONG><STRONG>I want to enter on channel&nbsp;#test&nbsp;on the 
+											server&nbsp;irc.red.com.&nbsp;How can I set it up?</STRONG>?</STRONG></A>
+							<LI>
+								<A href="#5"><STRONG><STRONG>Which parameters are available for the program?</STRONG></STRONG></A>
+							<LI>
+								<A href="#dibujo"><STRONG><STRONG>How can I change the colors of the program to better suit 
+											my web page</STRONG>?</STRONG></A>
+							<LI>
+								<A href="#idioma"><STRONG><STRONG>How can I change the shown text or add my own language</STRONG>?</STRONG></A>
+							<LI>
+								<A href="#8"><STRONG><STRONG>How can I show my own logo and banner on the top bar</STRONG>?</STRONG></A>
+							<LI>
+								<A href="#9"><STRONG><STRONG>How can I change the quit message</STRONG>?</STRONG></A>
+							<LI>
+								<A href="#encoding"><STRONG><STRONG><STRONG>Does Bocazas 1.1 support international characters? 
+												If that´s the case, How can I setup the program to show them</STRONG></STRONG>?</STRONG></A>
+							<LI>
+								<A href="#11"><STRONG><STRONG>We like your program alot, but it doesn´t completely fit our 
+											needs. Is it possible to add new features and modifications to personalize it 
+											for our website</STRONG>?</STRONG></A></LI></OL>
+						<P></P>
+						<a name="1"></a>
+						<P><STRONG>Which are the general characteristics and what versions are available?</STRONG></P>
+						<P>Detailed information about the several versions available, may be found at <A href="http://www.bocazas.com/en/bocazas.asp">
+								http://www.bocazas.com/en/bocazas.asp</A></P>
+						<P></P>
+						<a name="2"></a>
+						<P><STRONG></STRONG>&nbsp;</P>
+						<P><STRONG>Where do I upload the content of the compressed file?</STRONG></P>
+						<P>All the files must be upload to the same folder where your chat web page will be 
+							located.</P>
+						<P>There are two files included as examples:</P>
+						<UL>
+							<LI>
+								<DIV>example1.html (Basic html code).</DIV>
+							<LI>
+								<DIV>example2.html (Example using javascript).</DIV>
+							</LI>
+						</UL>
+						<P>You can use any of the examples provided but any web page that you design and 
+							includes the applet will work.</P>
+						<P>&nbsp;</P>
+						<P></P>
+						<a name="3"></a>
+						<P><STRONG>Which is the simplest way to setup the program?</STRONG></P>
+						<P>The most simple configuration to make your program work is:</P>
+						<P><FONT size="2">&lt;APPLET archive="bocazas.jar" code="bocazas.class" height="450" 
+								width="620"&gt;<br>
+								&lt;PARAM NAME="cabbase" VALUE="bocazas.cab"&gt;<br>
+								&lt;/APPLET&gt;</FONT>
+						</P>
+						<P>It will show a 620x450 pixels applet where your nickname and several information 
+							will be asked. Remember, if you don´t setup anything else the program will 
+							bring you into our irc server (irc.bocazas.com) which can be very helpful if 
+							you don´t know or don´t have any irc server.</P>
+						<P>&nbsp;</P>
+						<P></P>
+						<a name="4"></a>
+						<P><STRONG>I want to enter on channel&nbsp;#test&nbsp;on the 
+								server&nbsp;irc.red.com.&nbsp;How can I set it up?</STRONG></P>
+						<P><EM>Remember: The default IRC server is 
+      irc.bocazas.com and you will be able to change it upon registering the 
+      product.</EM>    </P>
+      <P>The easiest way would be:</P>
+						<P><FONT size="2">&lt;APPLET archive="bocazas.jar" code="bocazas.class" height="450" 
+								width="620"&gt;<BR>
+								&lt;PARAM NAME="cabbase" VALUE="bocazas.cab"&gt;<br>
+								&lt;PARAM NAME="channel1" VALUE="#test"&gt;<br>
+								&lt;PARAM NAME="server1" VALUE="irc.red.com"&gt;<BR>
+								&lt;/APPLET&gt;</FONT>
+						</P>
+						<P>&nbsp;</P>
+						<P></P>
+						<a name="5"></a>
+						<P><STRONG>Which parameters are available for the program?</STRONG></P>
+						<P>The applet accepts several parameters defined on the param tag:</P>
+						<P><STRONG><FONT size="2">nickname</FONT></STRONG> - Specify a default nickname.</P>
+						<P><FONT size="2"><STRONG>fullname</STRONG></FONT> -&nbsp;The name to be shown on 
+							irc when somebody does a whois.</P>
+						<P><FONT size="2"><STRONG>channel1<br>
+									channel2<br>
+									channel3, etc...</STRONG></FONT> &nbsp;- Defines all the channels that 
+							you want to show in the list of the configuration menu. By default the first 
+							one will be selected.</P>
+						<P><FONT size="2"><STRONG>server1<br>
+									server2<br>
+									server3, etc...</STRONG></FONT> -&nbsp;Defines all the servers you want 
+							to show in the list of the configuration menu. By default the first one will be 
+							selected.
+						</P>
+						<P>You can especify a different port for each server following the format:&nbsp;
+						</P>
+						<P>irc_server:port1,port2,port3
+						</P>
+						<P>Ej: <FONT size="2">&lt;PARAM name="Server1" value="irc.bocazas.com:6667,6668" &gt;</FONT>
+						</P>
+						<P>If not irc port is given, 6667 is the default.</P>
+						<P><FONT size="2"><STRONG>language1<br>
+									language2<br>
+									language3, etc...</STRONG></FONT> - Defines all the languages you want 
+							to show on the list of the configuration menu. This will be used to show all 
+							the program messages on the proper language. By default the first one will be 
+							selected.</P>
+						<P>Supported values are:</P>
+						<P>Español<br>
+							English</P>
+						<P>If you wish to add or modify a language, please visit this&nbsp; <A href="#idioma">link.</A></P>
+						<P><FONT size="2"><STRONG>list</STRONG></FONT> - Defines if you want to list all 
+							the channels upon entering the server. Values: true, false</P>
+						<P><FONT size="2"><STRONG>files</STRONG></FONT> - Defines if you want to be able to 
+							receive files through dcc. Default value is true. Values: true, false.</P>
+						<P><FONT size="2"><STRONG>popup</STRONG></FONT> - Defines if you want the applet to 
+							popup from the browser window, allowing in that way to ajust its size. Values: 
+							true, false</P>
+						<P><FONT size="2"><STRONG>ident</STRONG></FONT> - Defines the ident that will be 
+							shown on irc.</P>
+						<P><FONT size="2"><STRONG>autoentry</STRONG></FONT> - By default the program will 
+							enter into the IRC server automatically if given enough parameters (nickname, 
+							channel, server). But you can change this behaviour and show the configuration 
+							menu first to the user by giving this param a false value.
+						</P>
+						<P><FONT size="2"><STRONG>smileys </STRONG></FONT><FONT size="3">- Defines where the 
+								smileys (emoticons) file is located.</FONT></P>
+						<P><FONT size="2"><STRONG>buttons </STRONG></FONT><FONT size="3">- Defines where the 
+								buttons graphic file is located.</FONT></P>
+						<P><FONT size="2"><STRONG>encoding</STRONG></FONT>- Defines the character encoding 
+							for the connection (sometimes needed for international support). For detailed 
+							information please visit this&nbsp; <A href="#encoding">link.</A></P>
+						<P>There are several more params to define the look and feel of your program. If 
+							you wish to change the&nbsp;colors or front-end please follow this&nbsp; <A href="#dibujo">
+								link.</A></P>
+						<P><STRONG><FONT size="2">Parameters available on the registered versions:</FONT></STRONG></P>
+						<P><FONT size="2"><STRONG>logo</STRONG></FONT> - Defines the location of the logo 
+							that will be shown on the top left corner. Recommended dimensions are 150x60 
+							pixels.</P>
+						<P><FONT size="2"><STRONG>logourl</STRONG></FONT> - Defines the web page to which 
+							the user will be redirected if he/she clicks on the logo.</P>
+						<P><FONT size="2"><STRONG>banner</STRONG></FONT> - Defines the location of the 
+							banner that will be shown on the top. Recommended dimensions are 468x60 pixels.</P>
+						<P><FONT size="2"><STRONG>bannerurl</STRONG></FONT> - Defines the web page to which 
+							the user will be redirected if he/she clicks on the banner.</P>
+						<P><STRONG>top</STRONG> - It allows to hide the whole banner and logo bar at the 
+							top. Use the value false to hide it.</P>
+						<P><FONT size="2"><STRONG>quit</STRONG></FONT> - It allows to define&nbsp;which 
+							text to be displayed when an user quits the chat.</P>
+						<P>&nbsp;</P>
+						<P></P>
+						<a name="dibujo"></a>
+						<P><STRONG>How can I change the colors of the program to better suit my web page?</STRONG></P>
+						<P>If the default colors don´t adapt to your web site, there are several params 
+							availabe to modify them. These params are:</P>
+						<P><IMG src="statusbocazas.gif"></P>
+						<P><IMG src="setupbocazas.gif"></P>
+						<P><IMG src="channelbocazas.gif"></P>
+						<P>Remember to follow the hexadecimal color format used by most design and paint 
+							programs. For example, if you wish to change the background color (bgcolor) to 
+							blue and the panelcolor to red, the need params would be:</P>
+						<P><FONT size="2">&lt;param name="bgcolor" value="#0000ff"&gt;<br>
+								&lt;param name="panelcolor" value="#ff0000"&gt;</FONT></P>
+						<P><FONT size="2"></FONT>&nbsp;</P>
+						<P></P>
+						<a name="idioma"></a>
+						<P><STRONG>How can I change the shown text or add my own language?</STRONG></P>
+						<P>As you may know, Bocazas 1.1 comes with two preinstalled languages that can be 
+							activated by setting up the params:</P>
+						<P><FONT size="2">&lt;param name="language1" value="Español"&gt;<br>
+								&lt;param name="language2" value="English"&gt;</FONT></P>
+						<P>Nevertheless, in the compressed file you will find several language files 
+							(espanol.lang, english.lang, turkce.lang, ...) which can be used adding to the 
+							value of the param LANGUAGE a ':filename'.</P>
+						<P>Having said so, you could add the Turkish language found at the file turkce.lang 
+							by adding this param:</P>
+						<P><FONT size="2">&lt;param name="language1" value="Turkish:turkce.lang"&gt;</FONT></P>
+						<P>You could modify the current default languages too (English or Spanish) by 
+							editing the files english.lang or espanol.lang and saving it as a text file 
+							using character encoding UTF8. Then just follow the same format:</P>
+						<P><FONT size="2">&lt;param name="language1" value="English:english.lang"&gt;</FONT></P>
+						<P>If you wish to add your own language, it´s very simple. Choose a .lang file that 
+							you understand and edit it following the format. This means, don´t erase the " 
+							don´t change the numbers or special characters because they specify the colors 
+							and special format of the text. <EM>IMPORTANT</EM> remember to save it as a 
+							text file using character encoding UTF8.</P>
+						<P>For example, if you just created the language Pakistani and save it on the file 
+							pakis.lang you can add it to Bocazas 1.1 by using this param:</P>
+						<P><FONT size="2">&lt;param name="language1" value="Pakistani:pakis.lang"&gt;</FONT></P>
+						<P><FONT size="2"></FONT>&nbsp;</P>
+						<P></P>
+						<a name="8"></a>
+						<P><STRONG>How can I show my own logo and banner on the top bar?</STRONG></P>
+						<P><EM><U>You can only do this on the registered version.</U></EM></P>
+						<P>Remember that the recommended dimensions&nbsp;for the logo are&nbsp;150x60 
+							pixels&nbsp;and 468x60 pixels for the banner.</P>
+						<P>Let´s&nbsp;suppose that we&nbsp;want to show our logo which is located 
+							at&nbsp;http://www.myweb.com/logo.gif&nbsp;and that I want to go to 
+							http://www.mipropiaweb.com when someone clicks on it. The params would be:</P>
+						<P><FONT size="2">&lt;PARAM NAME="logo" VALUE="http://www.myweb.com/logo.gif"&gt;<br>
+								&lt;PARAM NAME="logourl" VALUE="http://www.mipropiaweb.com"&gt;</FONT></P>
+						<P>If we also wish to show our own logo located at http://www.miweb.com/banner.jpg 
+							and when someone clicks on it go to http://www.estaweb.com. The needed params 
+							would be:</P>
+						<P><FONT size="2">&lt;PARAM NAME="banner" VALUE="http://www.miweb.com/banner.jpg&gt;<BR>
+								&lt;PARAM NAME="bannerurl" VALUE="http://www.estaweb.com"&gt;</FONT></P>
+						<P><FONT size="2"></FONT>&nbsp;</P>
+						<P></P>
+						<P></P>
+						<a name="9"></a>
+						<P><STRONG>How can I change the quit message?</STRONG></P>
+						<P><EM><U><EM><U>You can only do this on the registered version.</U></EM></U></EM></P>
+						<P>You only need to insert the&nbsp;QUIT param as follows:</P>
+						<P><FONT size="2">&lt;PARAM NAME="quit" VALUE= "message to show&nbsp;upon leaving"&gt;</FONT></P>
+						<P><FONT size="2"></FONT>&nbsp;</P>
+						<P></P>
+						<a name="encoding"></a>
+						<P><STRONG><STRONG>Does Bocazas 1.1 support international characters? If that´s the case, 
+									How can I setup the program to show them?</STRONG></STRONG></P>
+						<P>This is not an easy task, but Bocazas 1.1 can show any character set that your 
+							web browser support. Unfortunately, this doesn´t depend only on our program but 
+							the chat server should have international characters support too.</P>
+						<P>Looking at your chat server documentation, if you know the character encoding 
+							used by your server, you just need to add it to the ENCODING param. There is a 
+							list of available encoding names at <A href="http://java.sun.com/products/jdk/1.1/docs/guide/intl/encoding.doc.html">
+								http://java.sun.com/products/jdk/1.1/docs/guide/intl/encoding.doc.html</A></P>
+						<P>As an example, if your server uses UTF8 character encoding you will need to add 
+							the following:</P>
+						<P><FONT size="2">&lt;PARAM NAME="encoding" VALUE="UTF8"&gt;</FONT></P>
+						<P>&nbsp;</P>
+						<P></P>
+						<a name="11"></a>
+						<P><STRONG>We like your program alot, but it doesn´t completely fit our needs. Is it 
+								possible to add new features and modifications to personalize it for our 
+								website?</STRONG></P>
+						<P>Bocazas 1.1 adapts to most of the existing websites but some customers will need 
+							features that are not available on current versions.</P>
+						<P>Bocazas S.L. has a wide range of activities and we also develop custom products, 
+							therefore if you need to modify, add new features or use our expertize on 
+							software development; you might like to contact us directly by email at <A href="mailto:info@bocazas.com">
+								info@bocazas.com</A>
+						</P>
+						<P></P>
+						<P></P>
+						<P></P>
+						<P align="center"><small>Copyright ©2002 Bocazas S.L.
+								<br>
+								<A href="mailto:info@bocazas.com">info@bocazas.com</A></small><BR>
+						</P>
+					</TD>
+				</TR>
+			</TBODY></TABLE>
+	</BODY>
+</HTML>

@@ -1,0 +1,30 @@
+=-=-==-=-==-=-==-=-==-=-==-=-==-=-==-=-=
+=- Título: Foro ASP
+=- Autor: CoRSA
+=- Email: soloasp@soloasp.com.ar
+=- URL: http://www.soloasp.com.ar/
+=-=-==-=-==-=-==-=-==-=-==-=-==-=-==-=-=
+
+El archivo .zip contiene 8 archivos:
+- descripcion.txt (el que están leyendo)
+- foro.asp (el display del foro)
+- vermensaje.asp (archivo que visualiza una discusion)
+- guardar.asp (archivo que guarda la informacion tomada por los formulario en la base de datps)
+- pregunta.asp (formualario para enviar una pregunta nueva al foro)
+- contestar.asp (formualario para responder a una pregunta u opinar sobre una discusión)
+- foro.mdb (BD del foro)
+- arrow1.gif (una simple imagen en formato gif)
+
+
+Instalacion:
+* Descomprimir los archivos al mismo directorio.
+* Correr en el servidor ASP (IIS, PWS) el archivo foro.asp
+
+=-=-==-=-==-=-==-=-==-=-==-=-==-=-==-=-=
+=- CoRSA - Webmaster SoloASP.com.ar
+=- soloasp@soloasp.com.ar
+=- http://www.soloasp.com.ar/
+=-=-==-=-==-=-==-=-==-=-==-=-==-=-==-=-=
+
+* Cualquier duda, seguerencia o error, avisarme al mail.
+

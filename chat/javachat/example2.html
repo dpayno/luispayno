@@ -1,0 +1,99 @@
+<html><head><title>Bocazas</title>
+</head>
+<body>
+
+<script LANGUAGE="Javascript">
+
+function chat() {
+
+bocazas= window.open('', 'Bocazas','status=1,width=640,height=500');
+bocazas.document.open();
+bocazas.document.write('<html><head><title>Bocazas</title></head>');
+bocazas.document.write('<body bgcolor=\"#000000\" text=\"#0000ff\"><center>Espere mientras se carga el applet</center><center>\n');
+bocazas.document.write('<applet archive=\"bocazas.jar\" code=bocazas.class width=620 height=450>\n');
+bocazas.document.write('<param name=\"CABBASE\" value=\"bocazas.cab\">\n');
+bocazas.document.write('<param name=\"nickname\" value=\"'+document.form.nick.value+'\">\n');
+bocazas.document.write('<param name=\"Channel1\" value=\"'+document.form.canal.options[document.form.canal.selectedIndex].value+'\">\n');
+bocazas.document.write('<param name=\"Server1\" value=\"'+document.form.servidor.options[document.form.servidor.selectedIndex].value+'\">\n');
+bocazas.document.write('<param name=\"Language1\" value=\"'+document.form.language.options[document.form.language.selectedIndex].value+'\">\n');
+bocazas.document.write('<param name=\"List\" value=\"'+document.form.list.checked+'\">\n');
+bocazas.document.write('<param name=\"Popup\" value=\"false\">\n');
+bocazas.document.write('</applet></center></body></html>');
+bocazas.document.close();
+}
+
+</script>
+<center>
+<form name="form" method='get'>
+
+<table border=0 cellpadding=4 bgcolor="#ffffff" width="70%">
+<tr>
+<td bgcolor="#ffcc66" align="right">
+<font face="verdana, arial, helvetica" size=2 color="#990000"><b>Nick</b></font>
+</td>
+<td bgcolor="#ffcc66" align="left">
+<tt><font face='Courier' color="#000000" size='3'><input name='nick' size=9 maxlength='9' style="FONT-FAMILY: Courier"></font></tt>
+</td>
+</tr>
+<tr>
+<td bgcolor="#ffebcc" align="right">
+<font face="verdana,arial,helvetica" size=2 color="#990000"><b>Canal:</b></font>
+</td>
+<td bgcolor="#ffebcc" align="left">
+<tt><font face="Courier" color="#000000" size=3>
+<SELECT name="canal" style="FONT-FAMILY: Courier">
+<option value="#beginner" 
+        selected>#beginner</option>
+<option value="#contactos">#contactos</option>
+<option value="#sexo">#sexo</option>
+<option value="#amigo">#amigos</option>
+<option value="#ayuda_irc">#ayuda_irc</option>
+<option value="#patinet">#patinet</option>
+<option value="#argentina">#argentina</option>
+<option value="#juerga">#juerga</option>
+<option value="#madrid">#madrid</option>
+</SELECT>
+</font></tt>
+</td>
+</tr></TR>
+<tr>
+<td bgcolor="#ffcc66" align="right">
+<font face="verdana,arial,helvetica" size=2 color="#990000"><b>Idioma:</b></font>
+</td>
+<td bgcolor="#ffcc66" align="left">
+<tt><font face="Courier" color="#000000" size=3>
+<SELECT name="language" style="FONT-FAMILY: Courier">
+<option value="Español" selected>Español</option>
+<option value="English">English</option>
+<option value="Aleman">Aleman</option>
+<option value="Català">Català</option>
+</SELECT>
+</font></tt>
+</td>
+</tr>
+<tr>
+<td bgcolor="#ffebcc" align="right">
+<font face="verdana,arial,helvetica" size=2 color="#990000"><b>Servidor:</b></font>
+</td>
+<td bgcolor="#ffebcc" align="left">
+<font face="Courier" size=2 color="#3e0184">
+<SELECT name="servidor" style="FONT-FAMILY: Courier">
+<option value="irc.bocazas.com" selected>irc.bocazas.com</option>
+</SELECT>
+</font>
+</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#ffcc66" align="center">
+<font face="verdana,arial,helvetica" size=2 color="#990000">
+<INPUT type="checkbox" name="list"><b>Listar canales al entrar</b></font>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#eb8019" valign="center" align="middle" heigt="50">
+<input type="button" value="Conectar" onClick="chat();" id=button1 name=button1>
+<br>
+</td>
+</tr>
+</table>
+</form>
+</center></LI></BODY></HTML>

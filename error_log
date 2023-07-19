@@ -1,0 +1,4 @@
+[02-Oct-2022 17:49:24 America/Chicago] PHP Warning:  preg_replace(): The /e modifier is no longer supported, use preg_replace_callback instead in /home2/isishost/public_html/luispayno/libraries/joomla/filter/input.php on line 652
+[02-Oct-2022 17:49:24 America/Chicago] PHP Warning:  preg_replace(): The /e modifier is no longer supported, use preg_replace_callback instead in /home2/isishost/public_html/luispayno/libraries/joomla/filter/input.php on line 654
+[02-Oct-2022 20:02:11 America/Chicago] PHP Warning:  preg_replace(): The /e modifier is no longer supported, use preg_replace_callback instead in /home2/isishost/public_html/luispayno/libraries/joomla/filter/input.php on line 652
+[02-Oct-2022 20:02:11 America/Chicago] PHP Warning:  preg_replace(): The /e modifier is no longer supported, use preg_replace_callback instead in /home2/isishost/public_html/luispayno/libraries/joomla/filter/input.php on line 654

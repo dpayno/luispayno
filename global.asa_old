@@ -1,0 +1,62 @@
+<OBJECT	
+	ID=ASPChat
+	RUNAT=Server
+	SCOPE=Application
+	PROGID="Scripting.Dictionary">
+</OBJECT>
+
+<OBJECT	
+	ID=ASPChatTime	
+	RUNAT=Server
+	SCOPE=Application
+	PROGID="Scripting.Dictionary">
+</OBJECT>
+
+<SCRIPT LANGUAGE="VBScript" RUNAT="Server">
+Sub Application_OnStart
+	aplication.lock
+	Application( "aspchat" )= aspchat
+	aplication.unlock
+End Sub
+</SCRIPT>
+
+<SCRIPT LANGUAGE="VBScript" RUNAT="Server">
+Sub Application_OnStart
+	aplication.lock
+	Application( "aspchattime" ) = aspchattime
+	aplication.unlock
+End Sub
+</SCRIPT>
+
+<SCRIPT LANGUAGE="VBScript" RUNAT="Server">
+Sub Application_OnStart
+	Application( "SwearWords" ) = Split("FUCK SHIT ASSHOLE NIGGER IDIOT CUNT KUNT ARSE KAFFIR HONKY WETBACK", " ")
+End Sub
+</SCRIPT>
+
+
+<SCRIPT LANGUAGE=VBScript RUNAT=Server> 
+Sub Application_OnStart
+	Application("ConnString1") = "Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=CompraCuriosa;Data Source=(local);User Id=Administrador;SERVER=(local);UID=Administrador;APP=Microsoft Development Environment;WSID=SERVER;DATABASE=CompraCuriosa;QueryLogFile=Yes"
+	Application("ConnString")   = "Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=CompraCuriosa;Data Source=(local)"
+End Sub
+ 
+Sub Application_OnStart
+        Application("ActiveUsers") = 0
+ End Sub
+ 
+ Sub Session_OnStart
+       Session.Timeout = 20
+       Session("Start") = Now
+      Application.Lock
+      Application("ActiveUsers") = Application("ActiveUsers") + 1
+      Application.UnLock
+ End Sub
+ 
+ Sub Session_OnEnd
+        Application.Lock
+        Application("ActiveUsers") = Application("ActiveUsers") - 1
+        Application.UnLock
+ End Sub
+ 
+</SCRIPT>

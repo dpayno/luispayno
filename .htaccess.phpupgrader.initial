@@ -1,0 +1,17 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^http://istsis.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://istsis.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://luispayno.istsis.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://luispayno.istsis.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.istsis.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.istsis.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.luispayno.istsis.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.luispayno.istsis.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://174.120.11.195/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://174.120.11.195$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://luispayno.es/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://luispayno.es$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.luispayno.es/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.luispayno.es$      [NC]
+# RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]

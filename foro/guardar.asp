@@ -53,7 +53,7 @@ Else
 Set oConn = Server.CreateObject ("ADODB.Connection")
 oConn.Open "DRIVER={Microsoft Access Driver (*.mdb)}; DBQ="&Server.MapPath("Data/../foro.mdb")
 
-'Ruta fisica en el server D:\XVRT\es-aqui.com\Html\payno\foro\foro.mdb
+'Ruta fisica en el server D:\XVRT\luispayno.es\Html\payno\foro\foro.mdb
 'Ruta dinamica "Data/../foro.mdb"
 
 

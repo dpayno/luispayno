@@ -156,7 +156,7 @@ OutStream.WriteLine(gaiteros)
     <td width="99%"> 
       <!-- Begin Nedstat Basic code -->
       <!-- Title: Gaita Gastoreña -->
-      <!-- URL: http://www.es-aqui.com/gaita/m_lat.asp -->
+      <!-- URL: https://www.luispayno.es/gaita/m_lat.asp -->
       <script language="JavaScript" src="http://m1.nedstatbasic.net/basic.js">
 </script>
       <script language="JavaScript">

@@ -124,7 +124,7 @@ function MM_showHideLayers() { //v3.0
   </tr>
   <tr> 
     <td width="601"> 
-      <div align="left"><font face="Verdana, Arial, Helvetica, sans-serif"><font color="#000000"><a href="../inst/menu.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('m_instr','','../img/z_instrum_1.gif','m_secc','','../img/z_secc_0.gif','m_contac','','../img/z_contac_0.gif','SUBMENU','','../img/z_instrum_3.gif','M_INSTRUM','','../img/z_amarillo.gif',1);MM_showHideLayers('capacontac','','hide','capasecc','','hide')"><img src="../img/z_instrum_0.gif" width="123" height="25" border="0" name="m_instr"></a></font><font face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><img src="../img/b_vert.gif" width="3" height="25"></font><font color="#000000"><a href="#arti" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('m_arti','','../img/z_artic_1.gif','m_secc','','../img/z_secc_0.gif','m_contac','','../img/z_contac_0.gif','SUBMENU','','../img/z_artic_3.gif','M_ARTIC1','','../img/z_amarillo.gif','M_ARTIC','','../img/z_amarillo.gif',1);MM_showHideLayers('capacontac','','hide','capasecc','','hide'); HREF='#parte1'"><img src="../img/z_artic_0.gif" width="91" height="25" name="m_arti" border="0"></a></font><font face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><img src="../img/b_vert.gif" width="3" height="25"></font><font color="#000000"><a href="javascript:;" onMouseOver="MM_swapImage('m_secc','','../img/z_secc_1.gif','m_contac','','../img/z_contac_0.gif',1);MM_showHideLayers('capacontac','','hide','capasecc','','show')"><img src="../img/z_secc_0.gif" width="91" height="25" name="m_secc" border="0"></a></font><font face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><img src="../img/b_vert.gif" width="3" height="25"></font><font color="#000000"><img src="../img/tras.gif" width="161" height="15"><img src="../img/b_vert.gif" width="3" height="25"><a href="http://www.melodysoft.com/cgi-bin/foro.cgi?ID=payno%20" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('m_secc','','../img/z_secc_0.gif','m_foro','','../img/z_foro_1.gif','m_contac','','../img/z_contac_0.gif','SUBMENU','','../img/tras.gif',1);MM_showHideLayers('capacontac','','hide','capasecc','','hide')" target="_blank"><img src="../img/z_foro_1.gif" width="41" height="25" name="m_foro" border="0"></a></font><font face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><img src="../img/b_vert.gif" width="3" height="25"></font><font color="#000000"><a href="mailto:es-aqui@es-aqui.com" onMouseOver="MM_swapImage('m_secc','','../img/z_secc_0.gif','m_contac','','../img/z_contac_1.gif',1);MM_showHideLayers('capacontac','','show','capasecc','','hide')"><img src="../img/z_contac_0.gif" width="79" height="25" name="m_contac" border="0"></a></font></font></div>
+      <div align="left"><font face="Verdana, Arial, Helvetica, sans-serif"><font color="#000000"><a href="../inst/menu.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('m_instr','','../img/z_instrum_1.gif','m_secc','','../img/z_secc_0.gif','m_contac','','../img/z_contac_0.gif','SUBMENU','','../img/z_instrum_3.gif','M_INSTRUM','','../img/z_amarillo.gif',1);MM_showHideLayers('capacontac','','hide','capasecc','','hide')"><img src="../img/z_instrum_0.gif" width="123" height="25" border="0" name="m_instr"></a></font><font face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><img src="../img/b_vert.gif" width="3" height="25"></font><font color="#000000"><a href="#arti" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('m_arti','','../img/z_artic_1.gif','m_secc','','../img/z_secc_0.gif','m_contac','','../img/z_contac_0.gif','SUBMENU','','../img/z_artic_3.gif','M_ARTIC1','','../img/z_amarillo.gif','M_ARTIC','','../img/z_amarillo.gif',1);MM_showHideLayers('capacontac','','hide','capasecc','','hide'); HREF='#parte1'"><img src="../img/z_artic_0.gif" width="91" height="25" name="m_arti" border="0"></a></font><font face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><img src="../img/b_vert.gif" width="3" height="25"></font><font color="#000000"><a href="javascript:;" onMouseOver="MM_swapImage('m_secc','','../img/z_secc_1.gif','m_contac','','../img/z_contac_0.gif',1);MM_showHideLayers('capacontac','','hide','capasecc','','show')"><img src="../img/z_secc_0.gif" width="91" height="25" name="m_secc" border="0"></a></font><font face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><img src="../img/b_vert.gif" width="3" height="25"></font><font color="#000000"><img src="../img/tras.gif" width="161" height="15"><img src="../img/b_vert.gif" width="3" height="25"><a href="http://www.melodysoft.com/cgi-bin/foro.cgi?ID=payno%20" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('m_secc','','../img/z_secc_0.gif','m_foro','','../img/z_foro_1.gif','m_contac','','../img/z_contac_0.gif','SUBMENU','','../img/tras.gif',1);MM_showHideLayers('capacontac','','hide','capasecc','','hide')" target="_blank"><img src="../img/z_foro_1.gif" width="41" height="25" name="m_foro" border="0"></a></font><font face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><img src="../img/b_vert.gif" width="3" height="25"></font><font color="#000000"><a href="mailto:info@luispayno.es" onMouseOver="MM_swapImage('m_secc','','../img/z_secc_0.gif','m_contac','','../img/z_contac_1.gif',1);MM_showHideLayers('capacontac','','show','capasecc','','hide')"><img src="../img/z_contac_0.gif" width="79" height="25" name="m_contac" border="0"></a></font></font></div>
     </td>
   </tr>
   <tr> 
@@ -249,10 +249,10 @@ Set oConn = nothing
         |</font> <a href="../links/menu.htm" style="text-decoration:none"><font color="#000000">OTROS 
         SITIOS</font></a><font color="#000000"> |</font> <a href="http://www.melodysoft.com/cgi-bin/gbook.cgi?ID=payno" style="text-decoration:none" target="_blank"><font color="#000000">NOTICIAS</font></a><font color="#000000"> 
         |</font> <a href="../album/menu.htm" style="text-decoration:none"><font color="#000000">ALBUM 
-        FOTOS</font></a><font color="#000000"> | </font><a href="mailto:es-aqui@es-aqui.com" style="text-decoration:none"><font color="#000000">PLANOS</font><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#FF0000"><font color="#000000"> 
+        FOTOS</font></a><font color="#000000"> | </font><a href="mailto:info@luispayno.es" style="text-decoration:none"><font color="#000000">PLANOS</font><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#FF0000"><font color="#000000"> 
         | </font><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#FF0000"></font></font></a><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#FF0000"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#FF0000"><a href="../libros/menu.htm" style="text-decoration:none"><font color="#000000">LIBROS</font><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#FF0000"><font color="#000000"> 
         | </font></font></a></font></font><font color="#000000"> </font><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#FF0000"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#FF0000"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#FF0000"><a href="../libros/menu.htm" style="text-decoration:none"><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#FF0000"><font color="#000000"> 
-        </font></font></a></font></font><font color="#000000"> <font color="#FF0000"><a href="mailto:es-aqui@es-aqui.com" style="text-decoration:none"><font color="#000000">CONTACTAR</font></a></font></font></font></font><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><font color="#000000"><font color="#FF0000"><img src="../img/tras.gif" width="13" height="13" align="top"></font></font></font></div>
+        </font></font></a></font></font><font color="#000000"> <font color="#FF0000"><a href="mailto:info@luispayno.es" style="text-decoration:none"><font color="#000000">CONTACTAR</font></a></font></font></font></font><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><font color="#000000"><font color="#FF0000"><img src="../img/tras.gif" width="13" height="13" align="top"></font></font></font></div>
     </td>
   </tr>
   <tr valign="top"> 
@@ -263,17 +263,17 @@ Set oConn = nothing
       <div align="center"><font face="Verdana, Arial, Helvetica, sans-serif" size="1"> 
         <!--email -->
         <a href="mailto:COLOCA_DIRECCION_@_EMA.IL?Subject=Web%20sobre%20INSTRUMENTOS
-%20TRADICIONALES%20-%20www.es-aqui.com/payno&Body=Coloca%20tu%20texto%20a%20enviar">Informa 
+%20TRADICIONALES%20-%20www.luispayno.es&Body=Coloca%20tu%20texto%20a%20enviar">Informa 
         a alguien sobre esta web</a> 
         <!--fin email -->
         <font face="Arial, Helvetica, sans-serif">&#149; </font> 
         <!-- pag inicio -->
-        <a style="CURSOR: hand" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.es-aqui.com/payno');" href="#">Haznos 
+        <a style="CURSOR: hand" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('https://www.luispayno.es');" href="#">Haznos 
         tu web de inicio</a> 
         <!-- pag inicio -->
         <font face="Arial, Helvetica, sans-serif">&#149; </font> 
         <!-- añadir fav -->
-        <a href="javascript:window.external.AddFavorite('http://www.es-aqui.com/payno','Construcción INSTRUMENTOS TRADICIONALES')">Agregar 
+        <a href="javascript:window.external.AddFavorite('https://www.luispayno.es','Construcción INSTRUMENTOS TRADICIONALES')">Agregar 
         a Favoritos</a> 
         <!-- añadir fav -->
         <img src="../img/tras.gif" width="2" height="20"> </font> </div>
@@ -286,7 +286,7 @@ Set oConn = nothing
   <map name="Map2"> 
     <area shape="rect" coords="255,6,373,24" href="../somos.htm">
     <area shape="rect" coords="395,4,518,23" href="../preten.htm">
-    <area shape="rect" coords="529,4,597,22" href="mailto:es-aqui@es-aqui.com">
+    <area shape="rect" coords="529,4,597,22" href="mailto:info@luispayno.es">
   </map>
 </div>
 <map name="Map"> 

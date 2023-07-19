@@ -474,7 +474,7 @@ End function
         <font color="#000000">|</font> <a href="../colabora/menu.htm" style="text-decoration:none"><font color="#000000">COLABORACIONES</font></a> 
         <font color="#000000">|</font> <a href="../mercado/menu.htm" style="text-decoration:none"><font color="#000000">MERCADILLO</font></a><font color="#000000"> 
         |</font> <a href="../links/menu.htm" style="text-decoration:none"><font color="#000000">OTROS 
-        SITIOS</font></a><font color="#000000"> |</font> <a href="http://www.es-aqui.com/payno/noticias/vermensaje.asp?idmensaje=1" style="text-decoration:none"><font color="#000000">NOTICIAS</font></a><font color="#000000"> 
+        SITIOS</font></a><font color="#000000"> |</font> <a href="https://www.luispayno.es/noticias/vermensaje.asp?idmensaje=1" style="text-decoration:none"><font color="#000000">NOTICIAS</font></a><font color="#000000"> 
         |</font> <a href="../album/menu.htm" style="text-decoration:none"><font color="#000000">ALBUM 
         FOTOS</font></a><font color="#000000"> | </font><a href="mailto:es-aqui@es-aqui.com" style="text-decoration:none"><font color="#000000">PLANOS</font><font color="#000000"> 
         | </font></a><a href="../libros/menu.htm" style="text-decoration:none"><font color="#000000">LIBROS</font><font face="Verdana, Arial, Helvetica, sans-serif" size="1" color="#000000"> 
@@ -519,7 +519,7 @@ End function
 <map name="Map"> 
   <area shape="rect" coords="5,4,87,22" href="../mercado/menu.htm">
   <area shape="rect" coords="108,5,220,23" href="../album/menu.htm">
-  <area shape="rect" coords="243,4,394,22" href="http://www.es-aqui.com/payno/noticias/vermensaje.asp?idmensaje=1" alt="click !" title="click !">
+  <area shape="rect" coords="243,4,394,22" href="https://www.luispayno.es/noticias/vermensaje.asp?idmensaje=1" alt="click !" title="click !">
   <area shape="rect" coords="413,4,531,22" href="../colabora/menu.htm">
   <area shape="rect" coords="546,4,598,22" href="../links/menu.htm">
 </map>

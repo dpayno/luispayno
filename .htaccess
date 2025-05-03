@@ -23,4 +23,6 @@ RewriteCond %{HTTP_REFERER} !^http://www.luispayno.es$      [NC]
 # </IfModule>
 # php -- END cPanel-generated handler, do not edit
 
-DirectoryIndex index.html index.php
+# DirectoryIndex index.html index.php
+DirectoryIndex index.html
+AllowOverride All
